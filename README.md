@@ -20,7 +20,7 @@ xhost +$(hostname)
 export DISPLAY=:0
 ```
 
-1. Restart your computer… yes ik its annoying
+4. Restart your computer… yes ik its annoying
 
 ### 2. Set up Docker Container
 
@@ -33,7 +33,7 @@ Docker pull ubuntu
 docker build -t signalhound-container .
 ```
 
-1. **Run the Docker Container with Display Environment Variable**: You need to pass the display environment variable to the Docker container and mount the X11 socket. Use the following Docker run command:
+3. **Run the Docker Container with Display Environment Variable**: You need to pass the display environment variable to the Docker container and mount the X11 socket. Use the following Docker run command:
 
 ```python
 docker run -it --rm --privileged \
@@ -44,7 +44,7 @@ docker run -it --rm --privileged \
   signalhound-container
 ```
 
-1. **Open the terminal in Docker:** Click on the 3 dots next to the running container and click open in terminal. Switch directories into the Spike folder and run Spike
+4. **Open the terminal in Docker:** Click on the 3 dots next to the running container and click open in terminal. Switch directories into the Spike folder and run Spike
 
 ```python
 cd Spike\(Ubuntu22.04x64\)_3_9_6
@@ -54,4 +54,4 @@ cd Spike\(Ubuntu22.04x64\)_3_9_6
 ./Spike
 ```
 
-1. If it still doesn’t work, restart your computer again and try building + running the container again
+5. If it still doesn’t work, restart your computer again and try building + running the container again
