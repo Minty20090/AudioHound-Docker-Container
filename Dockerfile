@@ -30,6 +30,7 @@ RUN dpkg --add-architecture i386 && \
     x11-xserver-utils \
     libglu1-mesa \
     libgl1-mesa-dri \
+    usbutils \
     && rm -rf /var/lib/apt/lists/*
 
 # Create a non-root user
