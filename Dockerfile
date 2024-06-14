@@ -2,7 +2,8 @@
 FROM ubuntu:22.04
 
 # Install dependencies
-RUN apt-get update && apt-get install -y \
+RUN dpkg --add-architecture i386 && \
+    apt-get update && apt-get install -y \
     wget \
     unzip \
     libusb-1.0-0-dev \
